@@ -35,4 +35,8 @@ public class Dado {
 			letrasUsadas[i] = false;
 		}
 	}
+
+	public int getCantidadLetras() {
+		return letras.length;
+	}
 }

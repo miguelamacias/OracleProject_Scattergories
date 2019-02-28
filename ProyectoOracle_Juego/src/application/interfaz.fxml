@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.shape.*?>
 <?import java.lang.*?>
@@ -10,8 +11,8 @@
    <children>
       <Pane layoutX="-214.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Rectangle fx:id="rectangulo" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.0" layoutX="139.0" layoutY="79.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
-            <Button fx:id="boton" layoutX="139.0" layoutY="344.0" mnemonicParsing="false" text="Button" />
+            <Button fx:id="boton" layoutX="139.0" layoutY="344.0" mnemonicParsing="false" onAction="#cambiarLetra" text="Button" />
+            <ImageView fx:id="cuadroImagen" fitHeight="150.0" fitWidth="200.0" layoutX="139.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true" />
          </children></Pane>
    </children>
 </AnchorPane>
