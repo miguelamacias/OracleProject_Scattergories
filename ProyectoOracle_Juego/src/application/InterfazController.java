@@ -11,7 +11,7 @@ import javafx.scene.shape.Rectangle;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
-public class interfazController {
+public class InterfazController {
 
     @FXML // ResourceBundle that was given to the FXMLLoader
     private ResourceBundle resources;
