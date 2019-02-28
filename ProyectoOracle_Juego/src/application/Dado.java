@@ -12,19 +12,11 @@ public class Dado {
 	public char siguienteLetra () {
 		int tirada = dado.nextInt(26);
 		char resultado = letras[tirada];
-		do {
-
-			if (!letrasUsadas[tirada]) {
-				letrasUsadas[tirada] = true;
-				return resultado;
-			} else {
-				tirada = dado.nextInt(26);
-				resultado = letras[tirada];
-
-
-			}
-		} while (letrasUsadas[tirada]);
-		letrasUsadas[tirada] = true;
-		return resultado;
+		if (!letrasUsadas[tirada]) {
+			letrasUsadas[tirada] = true;
+			return resultado;
+		} else {
+			return siguienteLetra();
+		}
 	}
 }
