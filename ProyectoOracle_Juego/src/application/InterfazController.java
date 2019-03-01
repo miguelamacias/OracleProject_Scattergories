@@ -7,37 +7,57 @@ package application;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.scene.image.Image;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.TextArea;
 import javafx.scene.image.ImageView;
 
 public class InterfazController {
 
-    @FXML // ResourceBundle that was given to the FXMLLoader
+	//Objetos y variables para usar en todo el programa
+    private Dado dado = new Dado();
+    Tableros tableros = new Tableros();
+    private int contadorLetras = 0;
+    
+    @FXML
     private ResourceBundle resources;
 
-    @FXML // URL location of the FXML file that was given to the FXMLLoader
+    @FXML 
     private URL location;
 
-    @FXML // fx:id="boton"
-    private Button boton; // Value injected by FXMLLoader
+    @FXML
+    private Button cambiarLetra;
+    
+    @FXML
+    private TextArea jugadaPC;
+    
+    @FXML 
+    private ImageView cuadroImagen;
 
-    @FXML // fx:id="cuadroImagen"
-    private ImageView cuadroImagen; // Value injected by FXMLLoader
+    @FXML
+    private ComboBox<String> tablero;
 
 
-
-    @FXML // This method is called by the FXMLLoader when initialization is complete
+    @FXML 
     void initialize() {
-        assert boton != null : "fx:id=\"boton\" was not injected: check your FXML file 'interfaz.fxml'.";
+    	assert cambiarLetra != null : "fx:id=\"cambiarLetra\" was not injected: check your FXML file 'interfaz.fxml'.";
         assert cuadroImagen != null : "fx:id=\"cuadroImagen\" was not injected: check your FXML file 'interfaz.fxml'.";
+        assert tablero != null : "fx:id=\"tablero\" was not injected: check your FXML file 'interfaz.fxml'.";
+        assert jugadaPC != null : "fx:id=\"jugadaPC\" was not injected: check your FXML file 'interfaz.fxml'.";
+        
+        //Selección de tablero        
+        tablero.getItems().removeAll(tablero.getItems());
+        tablero.getItems().addAll(tableros.cargarTablerosDisponibles());
     }
-
-    private Dado dado = new Dado();
-    private int contadorLetras = 0;
+    
+    
+    
     @FXML
     void cambiarLetra(ActionEvent event) {
     	if (contadorLetras < dado.getCantidadLetras()) {
@@ -46,12 +66,22 @@ public class InterfazController {
 			cuadroImagen.setImage(imagen1);
 			contadorLetras++;
 		} else {
+			//Mensaje de que ya se han acabado las letras.
 			Alert errorAlert = new Alert(AlertType.WARNING);
 			errorAlert.setHeaderText("Fin del juego");
 			errorAlert.setContentText("Ya se han jugado todas las letras, pero puedes jugar una nueva partida.");
 			errorAlert.showAndWait();
 		}
     }
+    
+    @FXML
+    void cargarTablero(ActionEvent event) {
+    	int seleccion = tablero.getSelectionModel().getSelectedIndex();
+    	Tableros tableros = new Tableros();
+    	tableros.getTablero(seleccion, jugadaPC);
+    	
+    }
+
 
 }
 
