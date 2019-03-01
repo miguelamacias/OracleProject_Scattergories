@@ -5,6 +5,7 @@ import java.security.SecureRandom;
 /**
  * Clase que simula el tipico dado de letras del Scattergories.
  * @author Miguel Angel Macias
+ * @version Alpha 1
  */
 public class Dado {
 	//Variables de instancia
