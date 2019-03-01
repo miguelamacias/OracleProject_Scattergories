@@ -30,7 +30,7 @@ public class Dado {
 	/**
 	 * Metodo que simula una tirada del dado y devuelve la letra obtenida.
 	 * Si la letra es repetida se descarta y se vuelve a tirar el dado.
-	 * @return Una letra del abecedario no devuelta anteriormente.
+	 * @return <code>char</code> Una letra del abecedario no devuelta anteriormente.
 	 */
 	public char siguienteLetra () {
 		int tirada = dado.nextInt(26);
@@ -56,7 +56,7 @@ public class Dado {
 
 	/**
 	 * Usado para que no se tire el dado mas veces que numero de letras diferentes hay.
-	 * @return El numero de letras diferentes disponibles
+	 * @return <code>int</code> El numero de letras diferentes disponibles
 	 */
 	public int getCantidadLetras() {
 		return letras.length;
