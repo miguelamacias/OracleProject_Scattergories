@@ -8,6 +8,7 @@ public class Tableros {
 	//tableros
 	private String clasico = "Clásico: Nombre, Apellido, Ciudad, Animal, Objeto, Famoso, Comida";
     private String naturaleza = "Naturaleza: Mamífero, Ave, Reptil, Planta, Anfibio, Invertebrado, Órgano animal";
+    private String prueba = "Scattergories uno: Animal de compañia, etc, cosas frias, etx, muchas cosas";
     
     //Escribe el tablero en el areatext
     public void getTablero(int tablero, TextArea jugadaPC) {
@@ -24,13 +25,14 @@ public class Tableros {
     }
     
     //Debería cargar los tableros disponibles en el combobox
-    public ObservableList<String> cargarTablerosDisponibles() {
-    	ObservableList<String> opciones = 
-        	    FXCollections.observableArrayList(
-        	        "Clásico: Nombre, Apellido, Ciudad, Animal, Objeto, Famoso, Comida",
-        	        "Naturaleza: Mamífero, Ave, Reptil, Planta, Anfibio, Invertebrado, Órgano animal",
-        	        "Option 3"
-        	    );
+    public String[] cargarTablerosDisponibles() {
+    	
+    	String opciones[] = {
+    			"Clásico: Nombre, Apellido, Ciudad, Animal, Objeto, Famoso, Comida",
+    	        "Naturaleza: Mamífero, Ave, Reptil, Planta, Anfibio, Invertebrado, Órgano animal",
+    	        prueba,
+    	        "Tus muertos"
+    	};
     	
     	return opciones;
     }
