@@ -49,8 +49,7 @@ public class InterfazController {
         assert tablero != null : "fx:id=\"tablero\" was not injected: check your FXML file 'interfaz.fxml'.";
         assert jugadaPC != null : "fx:id=\"jugadaPC\" was not injected: check your FXML file 'interfaz.fxml'.";
         
-        //Selección de tablero        
-        tablero.getItems().removeAll(tablero.getItems());
+        //Selección de tablero. Se cargan las opciones en el combobox  
         tablero.getItems().addAll(tableros.cargarTablerosDisponibles());
     }
     
@@ -58,6 +57,7 @@ public class InterfazController {
     
     @FXML
     void cambiarLetra(ActionEvent event) {
+    	//Si quedan letras se carga una nueva
     	if (contadorLetras < dado.getCantidadLetras()) {
 			String letra = String.format("/res/%c.png", dado.siguienteLetra());
 			Image imagen1 = new Image(letra);
@@ -74,9 +74,10 @@ public class InterfazController {
     
     @FXML
     void cargarTablero(ActionEvent event) {
+    	//Carga el tablero seleccionado desde el combobox en el area de juego
     	int seleccion = tablero.getSelectionModel().getSelectedIndex();
     	Tableros tableros = new Tableros();
-    	tableros.getTablero(seleccion, jugadaPC);
+    	tableros.cargarTablero(seleccion, jugadaPC);
     	
     }
 
