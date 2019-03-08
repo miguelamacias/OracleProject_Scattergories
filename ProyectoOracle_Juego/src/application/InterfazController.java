@@ -21,7 +21,6 @@ public class InterfazController {
 	//Objetos y variables para usar en todo el programa
     private Dado dado = new Dado();
     Tableros tableros = new Tableros();
-    private int contadorLetras = 0;
     
     @FXML
     private ResourceBundle resources;
@@ -58,11 +57,10 @@ public class InterfazController {
     @FXML
     void cambiarLetra(ActionEvent event) {
     	//Si quedan letras se carga una nueva
-    	if (contadorLetras < dado.getCantidadLetras()) {
+    	if (dado.getCantidadLetrasJugadas() < dado.getCantidadLetrasTotal()) {
 			String letra = String.format("/res/%c.png", dado.siguienteLetra());
 			Image imagen1 = new Image(letra);
 			cuadroImagen.setImage(imagen1);
-			contadorLetras++;
 		} else {
 			//Mensaje de que ya se han acabado las letras.
 			Alert errorAlert = new Alert(AlertType.WARNING);

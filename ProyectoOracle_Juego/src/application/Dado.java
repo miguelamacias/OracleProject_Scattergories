@@ -13,6 +13,7 @@ public class Dado {
 	private char[] letras;
 	private String alfabeto;
 	private boolean[] letrasUsadas;
+	private int contadorLetras;
 
 	/**
 	 * Constructor sin parametros que inicializa todas las variables de instancia
@@ -24,7 +25,7 @@ public class Dado {
 		letras = alfabeto.toCharArray();
 		letrasUsadas = new boolean[letras.length];
 		restablecerLetrasUsadas();
-
+		contadorLetras = 0;
 	}
 
 	/**
@@ -38,6 +39,7 @@ public class Dado {
 
 		if (!letrasUsadas[tirada]) {
 			letrasUsadas[tirada] = true;
+			contadorLetras++;
 			return resultado;
 
 		} else {
@@ -55,10 +57,18 @@ public class Dado {
 	}
 
 	/**
-	 * Usado para que no se tire el dado mas veces que numero de letras diferentes hay.
+	 * Informa de la cantidad de letras totales disponibles.
 	 * @return <code>int</code> El numero de letras diferentes disponibles
 	 */
-	public int getCantidadLetras() {
+	public int getCantidadLetrasTotal() {
 		return letras.length;
+	}
+	
+	/**
+	 * Informa de cuántas letras han sido jugadas hasta el momento.
+	 * @return <code>int</code> El numero de letras diferentes disponibles
+	 */
+	public int getCantidadLetrasJugadas() {
+		return contadorLetras;
 	}
 }
