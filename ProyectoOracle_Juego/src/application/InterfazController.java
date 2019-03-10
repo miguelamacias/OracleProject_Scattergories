@@ -24,7 +24,13 @@ public class InterfazController {
     
     @FXML
     private ResourceBundle resources;
-
+    
+    @FXML
+    private Button reiniciar;
+    
+    @FXML
+    private Button jugarPC;
+    
     @FXML 
     private URL location;
 
@@ -58,8 +64,8 @@ public class InterfazController {
     void cambiarLetra(ActionEvent event) {
     	//Si quedan letras se carga una nueva
     	if (dado.getCantidadLetrasJugadas() < dado.getCantidadLetrasTotal()) {
-			String letra = String.format("/res/%c.png", dado.siguienteLetra());
-			Image imagen1 = new Image(letra);
+			String letraImagen = String.format("/res/%c.png", dado.siguienteLetra());
+			Image imagen1 = new Image(letraImagen);
 			cuadroImagen.setImage(imagen1);
 		} else {
 			//Mensaje de que ya se han acabado las letras.
@@ -75,8 +81,21 @@ public class InterfazController {
     	//Carga el tablero seleccionado desde el combobox en el area de juego
     	int seleccion = tablero.getSelectionModel().getSelectedIndex();
     	Tableros tableros = new Tableros();
-    	tableros.cargarTablero(seleccion, jugadaPC);
-    	
+    	tableros.cargarTablero(seleccion, jugadaPC);    	
+    }
+    
+    @FXML
+    void jugadaPC(ActionEvent event) {
+    	int tableroSeleccionado = tablero.getSelectionModel().getSelectedIndex();
+    	int letra = dado.getLetraInt();
+    	tableros.SolucionarTableros(jugadaPC, tableroSeleccionado, letra);
+    }
+    
+    @FXML
+    void reiniciarJuego(ActionEvent event) {
+    	dado.restablecerLetrasUsadas();
+    	Image imagenInicio = new Image("/res/Abecedario.png");
+    	cuadroImagen.setImage(imagenInicio);
     }
 
 

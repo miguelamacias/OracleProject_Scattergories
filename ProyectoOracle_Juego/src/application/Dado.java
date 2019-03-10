@@ -5,7 +5,7 @@ import java.security.SecureRandom;
 /**
  * Clase que simula el tipico dado de letras del Scattergories.
  * @author Miguel Angel Macias
- * @version Alpha 2
+ * @version Beta 1
  */
 public class Dado {
 	//Variables de instancia
@@ -14,7 +14,8 @@ public class Dado {
 	private String alfabeto;
 	private boolean[] letrasUsadas;
 	private int contadorLetras;
-
+	private int resultadoInt;
+	
 	/**
 	 * Constructor sin parametros que inicializa todas las variables de instancia
 	 * necesarias para el funcionamiento de la clase.
@@ -40,6 +41,7 @@ public class Dado {
 		if (!letrasUsadas[tirada]) {
 			letrasUsadas[tirada] = true;
 			contadorLetras++;
+			resultadoInt = tirada;
 			return resultado;
 
 		} else {
@@ -54,6 +56,7 @@ public class Dado {
 		for (int i = 0; i < letrasUsadas.length; i++) {
 			letrasUsadas[i] = false;
 		}
+		contadorLetras = 0;
 	}
 
 	/**
@@ -70,5 +73,9 @@ public class Dado {
 	 */
 	public int getCantidadLetrasJugadas() {
 		return contadorLetras;
+	}
+	
+	public int getLetraInt() {
+		return resultadoInt;
 	}
 }
