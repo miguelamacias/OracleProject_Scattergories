@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.control.*?>
@@ -25,7 +26,10 @@
             <Button fx:id="reiniciar" layoutX="360.0" layoutY="181.0" mnemonicParsing="false" onAction="#reiniciarJuego" text="Reiniciar juego" />
             <Button layoutX="504.0" layoutY="181.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="118.0" text="Reglas" />
             <ComboBox fx:id="tablero" layoutX="225.0" layoutY="35.0" onAction="#cargarTablero" prefHeight="31.0" prefWidth="596.0" />
-            <TextArea fx:id="jugadaPC" layoutX="14.0" layoutY="262.0" prefHeight="135.0" prefWidth="950.0" />
+            <TextArea fx:id="jugadaPC" layoutX="14.0" layoutY="262.0" prefHeight="135.0" prefWidth="950.0">
+               <font>
+                  <Font name="Consolas" size="18.0" />
+               </font></TextArea>
          </children>
       </Pane>
    </children>

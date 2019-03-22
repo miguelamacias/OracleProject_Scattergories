@@ -17,10 +17,12 @@ public class Main extends Application {
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.getIcons().add(new Image(Main.class.getResourceAsStream("/res/ABC.png")));
 			primaryStage.setTitle("Scattergories");
+			primaryStage.setResizable(false);
 			primaryStage.setScene(scene);
 			primaryStage.show();
 		} catch(Exception e) {
 			e.printStackTrace();
+			System.out.printf("Error %s", e.toString());
 		}
 	}
 

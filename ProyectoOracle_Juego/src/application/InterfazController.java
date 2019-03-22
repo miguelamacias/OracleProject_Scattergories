@@ -4,6 +4,7 @@
 
 package application;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.scene.image.Image;
@@ -19,8 +20,8 @@ import javafx.scene.image.ImageView;
 public class InterfazController {
 
 	//Objetos y variables para usar en todo el programa
-    private Dado dado = new Dado();
-    Tableros tableros = new Tableros();
+    private Dado dado;
+    private Tableros tableros;
     
     @FXML
     private ResourceBundle resources;
@@ -48,13 +49,17 @@ public class InterfazController {
 
 
     @FXML 
-    void initialize() {
+    void initialize() throws IOException {
     	assert cambiarLetra != null : "fx:id=\"cambiarLetra\" was not injected: check your FXML file 'interfaz.fxml'.";
         assert cuadroImagen != null : "fx:id=\"cuadroImagen\" was not injected: check your FXML file 'interfaz.fxml'.";
         assert tablero != null : "fx:id=\"tablero\" was not injected: check your FXML file 'interfaz.fxml'.";
         assert jugadaPC != null : "fx:id=\"jugadaPC\" was not injected: check your FXML file 'interfaz.fxml'.";
         
-        //Selección de tablero. Se cargan las opciones en el combobox  
+        //Inicialización de objetos
+        dado = new Dado();
+        tableros = new Tableros();
+        
+        //Selección de tablero. Se cargan las opciones en el combobox        
         tablero.getItems().addAll(tableros.cargarTablerosDisponibles());
         
         //Mensaje de bienvenida
@@ -87,7 +92,7 @@ public class InterfazController {
     void cargarTablero(ActionEvent event) {
     	//Carga el tablero seleccionado desde el combobox en el area de juego
     	int seleccion = tablero.getSelectionModel().getSelectedIndex();
-    	Tableros tableros = new Tableros();
+    	//Tableros tableros = new Tableros();
     	tableros.cargarTablero(seleccion, jugadaPC);    	
     }
     

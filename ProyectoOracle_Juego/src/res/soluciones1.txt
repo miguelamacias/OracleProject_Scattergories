@@ -1,0 +1,27 @@
+Nombre    Apellido    Pais/Ciudad      Animal       Cosa       Famoso             Alimento
+Andrea    Abascal     Alemania         Alce         Ábaco      Antonio Horozco    Arándano
+Benito    Benítez     Barcelona        Burro        Botella    Belén Esteban      Bacalao
+Cristina  Cruz        Córdoba          Cangrejo     Cazo       Christiano R.      Castaña
+Daniel    Delgado     Dinamarca        Delfín       Dado       Dani Martín        Dátil
+Esteban   Escobar     España           Elefante     Espejo     Elton John         Espinacas
+Felipe    Fernández   Francia          Foca         Fuelle     Fidel Castro       Frambuesa
+Gabriel   Gutiérrez   Granada          Gallina      Globo      George W. Bush     Galleta
+Helena    Hurtado     Huelva           Hiena        Hueso      Hugo Chávez        Huevo
+Irene     Iruela      Italia           Iguana       Iglú       Isabel II          Infusión
+Jose      Jurado      Jaén             Jaguar       Juego      Jorge J. Vázquez   Jamón
+Katia     Kong        Kuwait           Kiwi         Kayak      Kim Kardashian     Kiwi
+Luis      Lara        Lugo             Lemur        Lámpara    Lola Flores        Lechuga
+Miguel    Martínez    Madrid           Mapache      Mesa       Manuel Carrasco    Mango
+Nuria     Navarro     Noruega          Nutria       Navaja     Nuria Fergó        Naranja
+Olga      Orozco      Oviedo           Orangután    Oreja      Ortega Cano        Oliva
+Pedro     Pacheco     Pamplona         Perro        Plato      Paula Vázquez      Pastel
+Queti     Quintana    Qatar            Quirquincho  Quiste     Quentin Tarantino  Queso
+Ramón     Romero      Roma             Ruiseñor     Reloj      Ricky Martin       Rábano
+Silvia    Salgado     Salamanca        Saltamontes  Sofá       Shakira            Soja
+Teresa    Tejero      Teruel           Tortuga      Televisor  Tony Blair         Tomate
+Úrsula    Urdangarín  Uruguay          Urraca       Ungüento   Ulma Thurman       Uva
+Virginia  Vázquez     Venezuela        Vaca         Vaso       Vin Diesel         Vinagre
+Wilfredo  Wagner      Wallys Y Futuna  Walabí       Waffle     Woody Allen        Wakame
+Xavier    Xérez       Xi'an            Xarda        Xilófono   Xavier Arzalluz    Xarda
+Yahaira   Yagüe       Yemen            Yak          Yo-yo      Yasiv Arafat       Yogur
+Zahara    Zorrilla    Zaragoza         Zorro        Zapato     Zidane             Zanahoria
