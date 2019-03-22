@@ -56,6 +56,9 @@ public class InterfazController {
         
         //Selección de tablero. Se cargan las opciones en el combobox  
         tablero.getItems().addAll(tableros.cargarTablerosDisponibles());
+        
+        //Mensaje de bienvenida
+        jugadaPC.setText("Bienvenidos!\n");
     }
     
     
@@ -67,6 +70,10 @@ public class InterfazController {
 			String letraImagen = String.format("/res/%c.png", dado.siguienteLetra());
 			Image imagen1 = new Image(letraImagen);
 			cuadroImagen.setImage(imagen1);
+			//Borrar el texto de la solución dejando el encabezado
+			String textoContenido = jugadaPC.getText();
+			textoContenido = textoContenido.substring(0, textoContenido.indexOf("\n"));
+			jugadaPC.setText(textoContenido + "\n");
 		} else {
 			//Mensaje de que ya se han acabado las letras.
 			Alert errorAlert = new Alert(AlertType.WARNING);
@@ -96,6 +103,11 @@ public class InterfazController {
     	dado.restablecerLetrasUsadas();
     	Image imagenInicio = new Image("/res/Abecedario.png");
     	cuadroImagen.setImage(imagenInicio);
+    	
+    	//Borrar el texto de la solución dejando el encabezado
+		String textoContenido = jugadaPC.getText();
+		textoContenido = textoContenido.substring(0, textoContenido.indexOf("\n"));
+		jugadaPC.setText(textoContenido + "\n");
     }
 
 

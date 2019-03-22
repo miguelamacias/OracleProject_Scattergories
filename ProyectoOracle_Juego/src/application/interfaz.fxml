@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="411.0" maxWidth="848.0" minHeight="411.0" minWidth="597.0" prefHeight="411.0" prefWidth="848.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.InterfazController">
+<AnchorPane maxHeight="411.0" maxWidth="976.0" minHeight="411.0" minWidth="597.0" prefHeight="411.0" prefWidth="976.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.InterfazController">
    <children>
       <Pane maxHeight="411.0" maxWidth="597.0" minHeight="411.0" minWidth="597.0" prefHeight="411.0" prefWidth="597.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -25,7 +25,7 @@
             <Button fx:id="reiniciar" layoutX="360.0" layoutY="181.0" mnemonicParsing="false" onAction="#reiniciarJuego" text="Reiniciar juego" />
             <Button layoutX="504.0" layoutY="181.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="118.0" text="Reglas" />
             <ComboBox fx:id="tablero" layoutX="225.0" layoutY="35.0" onAction="#cargarTablero" prefHeight="31.0" prefWidth="596.0" />
-            <TextArea fx:id="jugadaPC" layoutX="14.0" layoutY="262.0" prefHeight="135.0" prefWidth="818.0" />
+            <TextArea fx:id="jugadaPC" layoutX="14.0" layoutY="262.0" prefHeight="135.0" prefWidth="950.0" />
          </children>
       </Pane>
    </children>
