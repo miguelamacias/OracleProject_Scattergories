@@ -1,0 +1,81 @@
+Nombre       Apellido         Pais/Ciudad       Animal        Cosa       Famoso             Alimento
+Mamífero     Ave              Reptil            Planta        Pez        Invertebrado       Parte cuerpo
+Aún por implementar!
+Andrea       Abascal          Alemania          Alce          Ábaco      Antonio Horozco    Arándano
+Benito       Benítez          Barcelona         Burro         Botella    Belén Esteban      Bacalao
+Cristina     Cruz             Córdoba           Cangrejo      Cazo       Christiano R.      Castaña
+Daniel       Delgado          Dinamarca         Delfín        Dado       Dani Martín        Dátil
+Esteban      Escobar          España            Elefante      Espejo     Elton John         Espinacas
+Felipe       Fernández        Francia           Foca          Fuelle     Fidel Castro       Frambuesa
+Gabriel      Gutiérrez        Granada           Gallina       Globo      George W. Bush     Galleta
+Helena       Hurtado          Huelva            Hiena         Hueso      Hugo Chávez        Huevo
+Irene        Iruela           Italia            Iguana        Iglú       Isabel II          Infusión
+Jose         Jurado           Jaén              Jaguar        Juego      Jorge J. Vázquez   Jamón
+Katia        Kong             Kuwait            Kiwi          Kayak      Kim Kardashian     Kiwi
+Luis         Lara             Lugo              Lemur         Lámpara    Lola Flores        Lechuga
+Miguel       Martínez         Madrid            Mapache       Mesa       Manuel Carrasco    Mango
+Nuria        Navarro          Noruega           Nutria        Navaja     Nuria Fergó        Naranja
+Olga         Orozco           Oviedo            Orangután     Oreja      Ortega Cano        Oliva
+Pedro        Pacheco          Pamplona          Perro         Plato      Paula Vázquez      Pastel
+Queti        Quintana         Qatar             Quirquincho   Quiste     Quentin Tarantino  Queso
+Ramón        Romero           Roma              Ruiseñor      Reloj      Ricky Martin       Rábano
+Silvia       Salgado          Salamanca         Saltamontes   Sofá       Shakira            Soja
+Teresa       Tejero           Teruel            Tortuga       Televisor  Tony Blair         Tomate
+Úrsula       Urdangarín       Uruguay           Urraca        Ungüento   Ulma Thurman       Uva
+Virginia     Vázquez          Venezuela         Vaca          Vaso       Vin Diesel         Vinagre
+Wilfredo     Wagner           Wallys Y Futuna   Walabí        Waffle     Woody Allen        Wakame
+Xavier       Xérez            Xi'an             Xarda         Xilófono   Xavier Arzalluz    Xarda
+Yahaira      Yagüe            Yemen             Yak           Yo-yo      Yasiv Arafat       Yogur
+Zahara       Zorrilla         Zaragoza          Zorro         Zapato     Zidane             Zanahoria
+Ardilla      Águila           Anaconda          Abeto         Acedía     Almeja             Ano
+Burro        Buitre           Boa constrictor   Bambú         Bacalao    Babosa             Boca
+Caballo      Cernícalo        Cocodrilo         Cáctus        Cazón      Calamar            Corazón
+Delfín       Drongo           Dragón de Komodo  Dracena       Dorada     Dátil de mar       Dedo
+Elefante     Estornino        Esquinco          Eucalipto     Esturión   Esponja marina     Estómago
+Foca         Faisán           Falsa Yarará      Ficus         Foxino     Fisurela Oval      Fémur
+Gato         Gallina          Gecko             Gardenia      Góbido     Gusano             Garganta
+Hiena        Halcón           --------          Helecho       ------     Hormiga            Hígado
+Impala       Ipequí           Iguana            -------       ------     Insecto Palo       Intestino
+Jaguar       Jilguero         Jicotea           Junipero      Jurel      Juno Oscura        Juanete
+Koala        Kiwi             ------            Kalanchoe     ------     Kirito             --------
+León         Loro             Lagarto           Lantana       Lubina     Lombriz            Laringe
+Mapache      Mirlo            Mamba Negra       -------       Merluza    Medusa             Muela
+Nutria       Negrón           --------          -------       -------    Nécora             Nariz
+Orangután    Oropéndola       ---------         Orquídea      Otuno      Ostra              Ojo
+Perro        Paloma           Pitón             Pino          Pescada    Pulpo              Próstata
+Quiquincho   Quebrantahuesos  ------------      ------        -------    Quantius           Quijada
+Rinoceronte  Ruiseñor         ----------        Rosal         Rape       Rabuda de cobre    Radio
+Suricato     Somormujo        Serpiente         Surfinia      Salmón     Saltamontes        Seno
+Tigre        Tórtola          Tortuga           Tradescantia  Trucha     Tarántula          Tráquea
+---------    Urraca           --------          --------      ------     Uriburu            Útero
+Vaca         Vencejo          Varano            -------       Vaqueta    Viuda Negra        Vejiga
+Walabí       Wirapuru         --------          --------      ------     --------           ------
+--------     Xenodachis       ---------         -------       -------    Xifea              Xifoides
+Yaca         Yunco común      Yacaré            Yuca          -----      -----              Yugular
+Zorro        Zampullín        ------            -------       Zigena     -----              -------
+Aun no!
+Aun no!
+Aun no!
+Aun no!
+Aun no!
+Aun no!
+Aun no!
+Aun no!
+Aun no!
+Aun no!
+Aun no!
+Aun no!
+Aun no!
+Aun no!
+Aun no!
+Aun no!
+Aun no!
+Aun no!
+Aun no!
+Aun no!
+Aun no!
+Aun no!
+Aun no!
+Aun no!
+Aun no!
+Aun no!
