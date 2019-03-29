@@ -72,13 +72,18 @@ public class InterfazController {
     void cambiarLetra(ActionEvent event) {
     	//Si quedan letras se carga una nueva
     	if (dado.getCantidadLetrasJugadas() < dado.getCantidadLetrasTotal()) {
+    		//Obtiene una letra y carga la imagen correspondiente
 			String letraImagen = String.format("/res/%c.png", dado.siguienteLetra());
 			Image imagen1 = new Image(letraImagen);
 			cuadroImagen.setImage(imagen1);
+			
 			//Borrar el texto de la solución dejando el encabezado
 			String textoContenido = jugadaPC.getText();
 			textoContenido = textoContenido.substring(0, textoContenido.indexOf("\n"));
 			jugadaPC.setText(textoContenido + "\n");
+			
+			//Enciende el botón de resolver
+			jugarPC.setDisable(false);
 		} else {
 			//Mensaje de que ya se han acabado las letras.
 			Alert errorAlert = new Alert(AlertType.WARNING);
