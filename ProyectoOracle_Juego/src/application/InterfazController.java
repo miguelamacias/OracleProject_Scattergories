@@ -1,7 +1,3 @@
-/**
- * Sample Skeleton for 'interfaz.fxml' Controller Class
- */
-
 package application;
 
 import java.io.IOException;
@@ -47,7 +43,6 @@ public class InterfazController {
     @FXML
     private ComboBox<String> tablero;
 
-
     @FXML 
     void initialize() throws IOException {
     	assert cambiarLetra != null : "fx:id=\"cambiarLetra\" was not injected: check your FXML file 'interfaz.fxml'.";
@@ -64,9 +59,7 @@ public class InterfazController {
         
         //Mensaje de bienvenida
         jugadaPC.setText("Bienvenidos!\n");
-    }
-    
-    
+    }    
     
     @FXML
     void cambiarLetra(ActionEvent event) {
@@ -84,6 +77,7 @@ public class InterfazController {
 			
 			//Enciende el botón de resolver
 			jugarPC.setDisable(false);
+			
 		} else {
 			//Mensaje de que ya se han acabado las letras.
 			Alert errorAlert = new Alert(AlertType.WARNING);
@@ -119,7 +113,4 @@ public class InterfazController {
 		textoContenido = textoContenido.substring(0, textoContenido.indexOf("\n"));
 		jugadaPC.setText(textoContenido + "\n");
     }
-
-
 }
-
