@@ -12,6 +12,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextArea;
 import javafx.scene.image.ImageView;
+import javafx.stage.PopupWindow.AnchorLocation;
 
 public class InterfazController {
 
@@ -100,6 +101,17 @@ public class InterfazController {
     	int tableroSeleccionado = tablero.getSelectionModel().getSelectedIndex();
     	int letra = dado.getLetraInt();
     	tableros.SolucionarTableros(jugadaPC, tableroSeleccionado, letra);
+    }
+    
+    @FXML
+    void mostrarReglas() {
+    	Alert normas = new Alert(AlertType.WARNING);
+		normas.setHeaderText("Reglas");
+		normas.setContentText("Primero escoge un tablero y lanza el dado. El juego es para jugarlo con más amigos. Tenéis que buscar palabras"
+				+ "que encajen con lo que se pide. Al final todos las poneis en comun y os apuntáis 5 puntos si la palabra la teneis repetida"
+				+ "y 10 si no. La máquina también juega, por lo que hay que pulsar en mostrar soluciones para poder tener sus palabras en cuenta"
+				+ "a la hora de ver si están repetidas o no. Basado en el típio juego 'Alto el lápiz' o 'STOP' jugado en todos los colegios.");
+		normas.showAndWait();
     }
     
     @FXML
