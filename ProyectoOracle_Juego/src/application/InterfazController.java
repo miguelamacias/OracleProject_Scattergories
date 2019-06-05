@@ -12,6 +12,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextArea;
 import javafx.scene.image.ImageView;
+import javafx.stage.Stage;
 import javafx.stage.PopupWindow.AnchorLocation;
 
 public class InterfazController {
@@ -105,7 +106,10 @@ public class InterfazController {
     
     @FXML
     void mostrarReglas() {
-    	Alert normas = new Alert(AlertType.WARNING);
+    	Alert normas = new Alert(AlertType.INFORMATION);
+    	normas.setTitle("Información sobre el juego");
+    	Stage stage = (Stage) normas.getDialogPane().getScene().getWindow();
+    	stage.getIcons().add(new Image("/res/ABC.png"));
 		normas.setHeaderText("Reglas");
 		normas.setContentText("Primero escoge un tablero y lanza el dado. El juego es para jugarlo con más amigos. Tenéis que buscar palabras"
 				+ "que encajen con lo que se pide. Al final todos las poneis en comun y os apuntáis 5 puntos si la palabra la teneis repetida"

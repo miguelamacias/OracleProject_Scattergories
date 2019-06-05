@@ -24,13 +24,23 @@
             <Label layoutX="18.0" layoutY="226.0" text="Jugada PC:" />
             <Button fx:id="jugarPC" disable="true" layoutX="225.0" layoutY="181.0" mnemonicParsing="false" onAction="#jugadaPC" prefHeight="31.0" prefWidth="118.0" text="Jugada PC" />
             <Button fx:id="reiniciar" layoutX="395.0" layoutY="181.0" mnemonicParsing="false" onAction="#reiniciarJuego" text="Reiniciar juego" />
-            <Button layoutX="571.0" layoutY="181.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="118.0" text="Reglas" />
+            <Button layoutX="571.0" layoutY="181.0" mnemonicParsing="false" onAction="#mostrarReglas" prefHeight="31.0" prefWidth="118.0" text="Reglas" />
             <ComboBox fx:id="tablero" layoutX="225.0" layoutY="35.0" onAction="#cargarTablero" prefHeight="31.0" prefWidth="596.0" />
             <TextArea fx:id="jugadaPC" layoutX="14.0" layoutY="262.0" prefHeight="135.0" prefWidth="1117.0">
                <font>
                   <Font name="Consolas" size="18.0" />
                </font></TextArea>
             <Label layoutX="891.0" layoutY="237.0" text="Autor: Miguel Ángel Macías (c) 2019" />
+            <Label layoutX="891.0" layoutY="113.0" text="Alto el lápiz">
+               <font>
+                  <Font name="Gabriola" size="47.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="57.0" fitWidth="61.0" layoutX="1070.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../res/lapiz.png" />
+               </image>
+            </ImageView>
          </children>
       </Pane>
    </children>

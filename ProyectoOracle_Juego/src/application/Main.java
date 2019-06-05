@@ -16,7 +16,7 @@ public class Main extends Application {
 			Scene scene = new Scene(root);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.getIcons().add(new Image(Main.class.getResourceAsStream("/res/ABC.png")));
-			primaryStage.setTitle("Scattergories");
+			primaryStage.setTitle("Alto el lápiz");
 			primaryStage.setResizable(false);
 			primaryStage.setScene(scene);
 			primaryStage.show();
