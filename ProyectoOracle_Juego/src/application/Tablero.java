@@ -6,8 +6,13 @@ import java.io.FileReader;
 import java.io.IOException;
 
 import javafx.scene.control.TextArea;
-
-public class Tableros {
+/**
+ * Clase que simula un tablero del Scattergories o Alto el lápiz.
+ * Ofrece métodos y atributos para controlar y cambiar entre los diferentes modelos.
+ * @author Miguel Angel Macias
+ * @version 1.0
+ */
+public class Tablero {
 	//Variables para los tableros
 	private String clasico, naturaleza, scattergories1;
 	private String cabeceraClasico, cabeceraNaturaleza, cabeceraScattergories1;
@@ -18,14 +23,19 @@ public class Tableros {
 	BufferedReader leer;
 	File soluciones;
 	
-	//Constructor que inicializa las variables con los tableros disponibles
-    public Tableros() throws IOException {
+	/**
+	 * Constructor sin parametros que inicializa todas las variables de instancia
+	 * necesarias para el funcionamiento de la clase. Carga los tableros, los objetos
+	 * necesarios para la lectura de datos de los mismos, las cabeceras y las respuestas
+	 * de los mismos.
+	 */
+    public Tablero() throws IOException {
     	clasico = "Clásico: Nombre, Apellido, Ciudad, Animal, Objeto, Famoso, Comida";
     	naturaleza = "Naturaleza: Mamífero, Ave, Reptil, Planta, Anfibio, Invertebrado, Órgano animal";
     	scattergories1= "Scattergories uno: Animal de compañia, etc, cosas frias, etx, muchas cosas";
     	
     	//Objetos necesarios para cargar las soluciones desde el archivo txt
-    	soluciones = new File("src/res/soluciones.txt");    	
+    	soluciones = new File("soluciones.txt");    	
 		
 		fr = new FileReader(soluciones);
 		leer = new BufferedReader(fr);
@@ -50,7 +60,11 @@ public class Tableros {
     	
     }
     
-    //Escribe el tablero en la zona de juego
+    /**
+	 * Método que carga el talero seleccionado en el AreaText deseada.
+	 * @param tablero Número del tablero a cargar.
+	 * @param TextArea area de texto donde cargar el tablero.
+	 */
     public void cargarTablero(int tablero, TextArea jugadaPC) {
     	switch (tablero) {
 		case 0:
@@ -70,15 +84,26 @@ public class Tableros {
 		}
     }
     
-    //Carga los tableros disponibles en el combobox
-    public String[] cargarTablerosDisponibles() {
+    /**
+	 * Método que devuelve los tableros disponibles. Son usados
+	 * para darle contenido al desplegable que permite seleccionarlos.
+	 * @return <code>String[]</code> Array con los tableros disponibles .
+	 */
+    public String[] getTablerosDisponibles() {
     	
     	String opciones[] = {clasico, naturaleza, scattergories1};
     	
     	return opciones;
     }
     
-    //Solucciona el tablero
+    /**
+	 * Método que muestra las respuestas a un
+	 * determinado tablero. Lo hace cargando la solución adecuada en el TextArea
+	 * deseado.
+	 * @param jugadaPC TextArea donde cargar los resultados.
+	 * @param tablero int que indica el tipo de tablero a solucionar.
+	 * @param letra int que indica la letra cuya solución se desea mostrar.
+	 */
     public void SolucionarTableros(TextArea jugadaPC, int tablero, int letra) {
     	switch (tablero) {
 		case 0:

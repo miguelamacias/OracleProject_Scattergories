@@ -19,7 +19,7 @@ public class InterfazController {
 
 	//Objetos y variables para usar en todo el programa
     private Dado dado;
-    private Tableros tableros;
+    private Tablero tableros;
     
     @FXML
     private ResourceBundle resources;
@@ -54,10 +54,10 @@ public class InterfazController {
         
         //Inicialización de objetos
         dado = new Dado();
-        tableros = new Tableros();
+        tableros = new Tablero();
         
         //Selección de tablero. Se cargan las opciones en el combobox        
-        tablero.getItems().addAll(tableros.cargarTablerosDisponibles());
+        tablero.getItems().addAll(tableros.getTablerosDisponibles());
         
         //Mensaje de bienvenida
         jugadaPC.setText("Bienvenidos!\n");
@@ -93,7 +93,7 @@ public class InterfazController {
     void cargarTablero(ActionEvent event) {
     	//Carga el tablero seleccionado desde el combobox en el area de juego
     	int seleccion = tablero.getSelectionModel().getSelectedIndex();
-    	//Tableros tableros = new Tableros();
+    	//Tablero tableros = new Tablero();
     	tableros.cargarTablero(seleccion, jugadaPC);    	
     }
     

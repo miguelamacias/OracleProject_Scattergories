@@ -5,13 +5,12 @@ import java.security.SecureRandom;
 /**
  * Clase que simula el tipico dado de letras del Scattergories.
  * @author Miguel Angel Macias
- * @version Beta 1
+ * @version 1.0
  */
 public class Dado {
 	//Variables de instancia
 	private SecureRandom dado;
 	private char[] letras;
-	private String alfabeto;
 	private boolean[] letrasUsadas;
 	private int contadorLetras;
 	private int resultadoInt;
@@ -22,7 +21,7 @@ public class Dado {
 	 */
 	public Dado() {
 		dado = new SecureRandom();
-		alfabeto = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		String alfabeto = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 		letras = alfabeto.toCharArray();
 		letrasUsadas = new boolean[letras.length];
 		restablecerLetrasUsadas();
