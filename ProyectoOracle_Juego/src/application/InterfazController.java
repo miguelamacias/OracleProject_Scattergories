@@ -13,7 +13,6 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextArea;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
-import javafx.stage.PopupWindow.AnchorLocation;
 
 public class InterfazController {
 
